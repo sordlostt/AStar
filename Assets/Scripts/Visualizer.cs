@@ -26,7 +26,7 @@ namespace Pathing
             {
                 Tile tile = hit.transform.gameObject.GetComponentInParent<Tile>();
 
-                if (tile != null)
+                if (tile != null && !tile.IsWater())
                 {
                     if (nodeA == null)
                     {
